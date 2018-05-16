@@ -4,6 +4,6 @@
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at http://inspec.io/docs/reference/resources/
-describe command 'django-admin --version' do
-  its(:stdout) { should match(/1.8.7/) }
+describe command 'virtualenv --version' do
+  its(:stdout) { should match(/15.2.0/) }
 end
