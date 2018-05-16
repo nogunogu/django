@@ -29,4 +29,10 @@ suites:
     verifier:
       inspec_tests:
         - test/integration/install_virtualenv
+  - name: install_pip
+    run_list:
+      - recipe[django::install_pip]
+    verifier:
+      inspec_tests:
+        - test/integration/install_pip
     attributes:
